@@ -1,0 +1,216 @@
+.environmental-news {
+    padding: 2rem;
+    background-color: #f5f5f5;
+}
+
+.environmental-news h2 {
+    color: #2c7e6e;
+    margin-bottom: 1rem;
+}
+
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.news-item {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.news-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.news-item h3 {
+    color: #2c7e6e;
+    padding: 1rem 1rem 0.5rem;
+}
+
+.news-item p {
+    padding: 0 1rem 1rem;
+    color: #333;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #2c7e6e;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    margin: 0 1rem 1rem;
+}
+
+.see-more {
+    display: block;
+    text-align: right;
+    color: #2c7e6e;
+    text-decoration: none;
+    margin-top: 1rem;
+}
+
+.our-action {
+    padding: 2rem;
+}
+
+.our-action h2 {
+    color: #2c7e6e;
+    margin-bottom: 1rem;
+}
+
+.action-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.action-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.action-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.action-item.large {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 1rem;
+}
+
+.overlay h3 {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.overlay p {
+    margin: 0.5rem 0 0;
+    font-size: 0.9rem;
+}
+
+.call-to-action {
+    background-color: #2c7e6e;
+    color: white;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+}
+
+.call-to-action h3 {
+    margin: 0 0 0.5rem;
+    font-size: 1.5rem;
+}
+
+.call-to-action p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+    .action-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .action-item.large {
+        grid-column: auto;
+        grid-row: auto;
+    }
+}
+
+
+.join-us {
+    background-color: #f5f5f5;
+    padding: 2rem;
+}
+
+.join-us-content {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.join-us-image {
+    flex: 1;
+}
+
+.join-us-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.join-us-form {
+    flex: 1;
+    padding: 2rem;
+    background-color: white;
+}
+
+.join-us h2 {
+    color: #2c7e6e;
+    margin-bottom: 1rem;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-group textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+.submit-btn {
+    background-color: #2c7e6e;
+    color: white;
+    border: none;
+    padding: 0.75rem 2rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #215e52;
+}
+
+@media (max-width: 768px) {
+    .join-us-content {
+        flex-direction: column;
+    }
+    
+    .join-us-image {
+        height: 200px;
+    }
+}
