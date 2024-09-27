@@ -4,12 +4,18 @@
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: #117A68; /* 新的背景颜色 */
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     z-index: 1000;
+  }
+  
+  .logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
   }
   
   .logo img {
@@ -19,24 +25,31 @@
   .nav-links {
     display: flex;
     list-style: none;
+    margin: 0;
+    padding: 0;
   }
   
   .nav-links li {
-    margin-left: 2rem;
+    margin-right: 2rem;
   }
   
   .nav-links a {
     text-decoration: none;
-    color: #2c7e6e;
+    color: white; /* 改变文字颜色为白色，以提高可读性 */
     font-weight: bold;
   }
+  
+  /* 其余的 CSS 代码保持不变 */
   
   /* Hero section 样式 */
   .hero-section {
     background-image: url('images/mountain-hero.png');
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    height: 584px;
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -65,13 +78,19 @@
       padding: 1rem;
     }
   
+    .logo {
+      position: static;
+      transform: none;
+      margin-bottom: 1rem;
+    }
+  
     .nav-links {
-      margin-top: 1rem;
+      width: 100%;
+      justify-content: space-around;
     }
   
     .nav-links li {
-      margin-left: 1rem;
-      margin-right: 1rem;
+      margin-right: 0;
     }
   
     .hero-section h1 {
@@ -104,6 +123,9 @@
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display:flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 .news-item img {
@@ -130,6 +152,8 @@
     text-decoration: none;
     border-radius: 4px;
     margin: 0 1rem 1rem;
+    margin-top: auto;
+    width: 100px;
 }
 
 .see-more {
@@ -227,6 +251,41 @@
 }
 
 
+.mission-statement {
+    background-color: #f5f5f5;
+    padding: 3rem 0;
+  }
+  
+  .mission-statement p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .cooperative-enterprise {
+    padding: 3rem 0;
+  }
+  
+  .cooperative-enterprise h2 {
+    text-align: center;
+    color: #117A68;
+    margin-bottom: 2rem;
+  }
+  
+  .partner-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .partner-logos img {
+    height: 50px;
+    margin: 1rem;
+  }
+
 .join-us {
     background-color: #f5f5f5;
     padding: 2rem;
@@ -299,3 +358,27 @@
         height: 200px;
     }
 }
+
+.join-us, footer {
+    background-color: #117A68;
+    color: white;
+  }
+  
+  .join-us-form {
+    background-color: white;
+    color: #333;
+  }
+  
+  footer {
+    padding: 2rem 0;
+    text-align: center;
+  }
+  
+  .footer-logo img {
+    height: 40px;
+    margin-bottom: 1rem;
+  }
+  
+  .copyright {
+    font-size: 0.9rem;
+  }
